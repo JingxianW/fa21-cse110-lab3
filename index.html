@@ -7,37 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes by Jasmine</title>
     <link href="dogicon.ico" rel="favicon" type="image/ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Which Kind of Dogs Would You Like To Own?</h1>
+    <header id="main-header">
+        <h1 class="container">Which Kind of Dogs Would You Like To Own?</h1>
 
-        <img src="dogs.jpg" alt="Dogs Image">
+        <img id="pic" src="dogs.jpg" alt="Dogs Image">
 
-        <h2>
+        <h2 class="container2">
             Topic: This is a family meeting and we are going to discuss which kind of dogs we want to adopt.
         </h2>
-        <h4>
+        <h4 class="container3">
             Date: September 26, 2021
         </h4>
 
-        <nav>
-            <a href="#AttendeeNames">Attendee Names</a> |
-            <a href="#Agenda">Agenda</a> |
-            <a href="#UnfinishedBusiness">Unfinished Business</a> |
-            <a href="#NewBusiness">New Business</a> |
-            <a href="#Video">Video</a> |
-            <a href="#Audio">Audio</a> |
-            <a href="#Comments/Questions/Concerns">Comments/Questions/Concerns</a>
+        <nav id="navbar">
+            <div id="center">
+                <a href="#AttendeeNames">Attendee Names</a> |
+                <a href="#Agenda">Agenda</a> |
+                <a href="#UnfinishedBusiness">Unfinished Business</a> |
+                <a href="#NewBusiness">New Business</a> |
+                <a href="#Video">Video</a> |
+                <a href="#Audio">Audio</a> |
+                <a href="#Comments/Questions/Concerns">Comments/Questions/Concerns</a>
+            </div>   
         </nav>
 
     </header>
 
     <hr>
 
-    <main>
-        <section id="AttendeeNames">
+    <main id="main">
+        <img id="pic2" src="cutedog.png" alt="Cute Dog Image">
+        <section id="AttendeeNames" class="box-1">
             <h3>Attendee Names</h3>
             <ol>
                 <li>Jasmine</li>
@@ -49,7 +53,7 @@
             <em>all the attendees are family member.</em>
         </section>
 
-        <section id="Agenda">
+        <section id="Agenda" class="box-2">
             <h3>Agenda</h3>
             <div>
                 <input type="checkbox" id="thing1" name="thing1" value="first">
@@ -72,34 +76,36 @@
             </div>
             <br>
         </section>
-        
-        <section id="UnfinishedBusiness">
-            <h3>Unfinished Business</h3>
-            <label for="file1">what <strong>kind of dog</strong> to adopt:</label>
-            <progress id="file1" value="10" max="100"> 32% </progress>
-            <br>
-            <label for="file2">who will <strong>take care</strong> of the dog:</label>
-            <progress id="file2" value="85" max="100"> 32% </progress>
-            <br>
-            <label for="file3"><span><strong>male</strong></span> or <span><strong>female</strong></span>:</label>
-            <progress id="file3" value="50" max="100"> 32% </progress>
-        </section>
-        
-        <section id="NewBusiness">
-            <h3>New Business</h3>
-            <p><i>We do not have new business to discuss. We need to finish the remaining problems.</i></p>
-        </section>
 
-        <section id="Video">
-            <h3>Video</h3>
-            <p>Jasmine found a video in order to persuade her family to adopt a Chihuahua. &#128512;</p>
-            <video width="400" controls>
-            <source src="dogvideo.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-            </video>
-        </section>
+        <div class="grid">
+            <section id="UnfinishedBusiness" class="box-1">
+                <h3>Unfinished Business</h3>
+                <label for="file1">what <strong>kind of dog</strong> to adopt:</label>
+                <progress id="file1" value="10" max="100"> 32% </progress>
+                <br>
+                <label for="file2">who will <strong>take care</strong> of the dog:</label>
+                <progress id="file2" value="85" max="100"> 32% </progress>
+                <br>
+                <label for="file3"><span><strong>male</strong></span> or <span><strong>female</strong></span>:</label>
+                <progress id="file3" value="50" max="100"> 32% </progress>
+            </section>
+            
+            <section id="NewBusiness" class="box-2">
+                <h3>New Business</h3>
+                <p><i>We do not have new business to discuss. We need to finish the remaining problems.</i></p>
+            </section>
 
-        <section id="Audio">
+            <section id="Video" class="box-1">
+                <h3>Video</h3>
+                <p>Jasmine found a video in order to persuade her family to adopt a Chihuahua. &#128512;</p>
+                <video width="400" controls>
+                <source id="video" src="dogvideo.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+                </video>
+            </section>
+        </div>
+
+        <section id="Audio" class="box-3">
             <h3>Audio</h3>
             <audio controls>
             <source src="Dog-barking-sound.mp3" type="audio/mpeg">
@@ -107,7 +113,7 @@
             </audio>
         </section>
 
-        <section id="Comments/Questions/Concerns">
+        <section id="Comments/Questions/Concerns" class="box-3">
             <h3>Comments/Questions/Concerns?</h3>
             <textarea name="message"></textarea>
             <br>
@@ -116,8 +122,8 @@
 
         <br>
 
-        <details>
-            <summary>Summary</summary>
+        <details id="sum">
+            <summary class="box">Summary</summary>
             <p>At the end, we decided to adopt a female Chiwawa. And Jasmine will take care of her. &#128021;</p>
         </details>
 
