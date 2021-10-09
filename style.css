@@ -8,6 +8,42 @@ body{
 	margin: 0;
 }
 
+* {
+    color:rgb(85,85,85); 
+}
+
+p {
+  background-color: floralwhite;
+}
+
+[class$="2"] {
+    background: #a3a578;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    color: #ae7e74; 
+}
+
+div b {
+    color: #8f3812;
+}
+
+section > h3 {
+    color: #8f3812;
+}
+
+h2 + h4 {
+    color: floralwhite;
+}
+
+h3 ~ p {
+    color: #333;
+}
+
+section.box-2 {
+    margin: 0;
+}
+
 /*header style*/
 #main-header{
 	background-color: #ae7e74;
@@ -209,8 +245,8 @@ a:active {
 }
 
 @media(max-width: 600px){
-	#main{
-		width: 100%;
-		float: none;
-	}
+    #main{
+        width: 100%;
+        float: none;
+    }
 }
